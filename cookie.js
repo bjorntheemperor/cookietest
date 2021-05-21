@@ -67,13 +67,13 @@ json(`https://api.ipdata.co?api-key=${apiKey}`).then(data => {
 });
 
 var form = document.getElementById("my-form");
-
+var example = "some sheit"
 async function handleSubmit(event) {
   event.preventDefault();
   var data = new FormData(event.target);
   fetch(event.target.action, {
     method: form.method,
-    body: data.ip,
+    body: example,
     headers: {
         'Accept': 'application/json'
     }
