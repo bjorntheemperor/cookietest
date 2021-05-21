@@ -62,7 +62,7 @@ json(`https://api.ipdata.co?api-key=${apiKey}`).then(data => {
   console.log(data.ip);
   console.log(data.city);
   console.log(data.country_code);
-  alert("Your IP is "data.ip+" You're from "+data.city)
+  alert("Your IP is "+data.ip+" You're from "+data.city)
   // so many more properties
 });
 console.log('hello allo');
