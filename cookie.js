@@ -60,20 +60,20 @@ function json(url) {
 let apiKey = 'd8a8e4535e5b1518f376f7548c3d64bb540c0546dc1e72b4c509c435';
 json(`https://api.ipdata.co?api-key=${apiKey}`).then(data => {
   var ip = data.ip
-  console.log(ip);
+  console.log(data.ip);
   console.log(data.city);
   console.log(data.country_code);
   // so many more properties
 });
 
 var form = document.getElementById("my-form");
-var example = "some sheit"
+
 async function handleSubmit(event) {
   event.preventDefault();
-  var data = new FormData(event.target);
+  var data = ip;
   fetch(event.target.action, {
     method: form.method,
-    body: example,
+    body: data,
     headers: {
         'Accept': 'application/json'
     }
