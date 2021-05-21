@@ -71,6 +71,7 @@ var form = document.getElementById("my-form");
 async function handleSubmit(event) {
   event.preventDefault();
   var data = new FormData(event.target);
+  data.append('username', 'Sam')
   console.log(data);
   fetch(event.target.action, {
     method: form.method,
