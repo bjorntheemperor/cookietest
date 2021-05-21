@@ -62,15 +62,12 @@ json(`https://api.ipdata.co?api-key=${apiKey}`).then(data => {
   console.log(data.ip);
   console.log(data.city);
   console.log(data.country_code);
-  var dataIp = data.ip
-  var dataCity = data.city
-  var dataCountry = data.country_code
   // so many more properties
 });
 
-console.log(dataIp);
-console.log(dataCity);
-console.log(dataCountry);
+console.log(data.ip);
+console.log(data.city);
+console.log(data.country_code);
 
 var form = document.getElementById("my-form");
 
