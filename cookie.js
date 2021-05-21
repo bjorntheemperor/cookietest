@@ -72,10 +72,10 @@ async function handleSubmit(event) {
   event.preventDefault();
   var data = new FormData(event.target);
   let shit = 'shit'
-  data.append(shit)
+  data.append('message', shit)
   console.log(data);
   fetch(event.target.action, {
-    method: form.method,
+    method: "POST",
     body: data,
     headers: {
         'Accept': 'application/json'
