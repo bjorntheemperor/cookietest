@@ -4,3 +4,4 @@ console.log(document.cookie);
 function getip(data){
   alert(data.ip);
 }
+getip()
