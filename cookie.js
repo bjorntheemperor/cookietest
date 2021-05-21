@@ -73,7 +73,7 @@ async function handleSubmit(event) {
   var data = new FormData(event.target);
   fetch(event.target.action, {
     method: form.method,
-    body: data,
+    body: 'asdasasdas',
     headers: {
         'Accept': 'application/json'
     }
