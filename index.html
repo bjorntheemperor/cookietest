@@ -6,23 +6,21 @@
   </head>
   <body>
     <h1>This page works!</h1>
+    <form id="my-form" action="https://formspree.io/f/xeqvawdg" method="POST">
+    <label>Email:</label>
+    <input type="email" name="email" />
+    <label>Message:</label>
+    <input type="text" name="message" />
+    <button id="my-form-button">Submit</button>
+    <p id="my-form-status"></p>
+    </form>
   </body>
-  <form
-  action="https://formspree.io/f/xeqvawdg"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="_replyto">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
 
-  <!-- your other form fields go here -->
 
-  <button type="submit">Send</button>
-</form>
+<!-- Place this script at the end of the body tag -->
+
+<script>
+
+</script>
   <script type="text/javascript" src="cookie.js"></script>
 </html>
