@@ -65,4 +65,4 @@ json(`https://api.ipdata.co?api-key=${apiKey}`).then(data => {
   alert("Your IP is "+data.ip+" You're from "+data.city)
   // so many more properties
 });
-console.log('hello allo');
+console.log('hello allo!!');
