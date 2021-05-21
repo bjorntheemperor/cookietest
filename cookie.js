@@ -16,7 +16,7 @@ json(`https://api.ipdata.co?api-key=${apiKey}`).then(data => {
 
 var form = document.getElementById("my-form");
 
-async function handleSubmit(event) {
+async function handleSubmit(event) { //try to delete event.target everywhere
   event.preventDefault();
   var data = new FormData(event.target);
   let shit = 'shit'
