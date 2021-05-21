@@ -32,4 +32,5 @@ async function handleSubmit(event) {
   console.log(event.target);
   console.log(event.target.action);
 }
+handleSubmit()
 form.addEventListener("submit", handleSubmit)
