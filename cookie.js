@@ -71,13 +71,16 @@ var form = document.getElementById("my-form");
 async function handleSubmit(event) {
   event.preventDefault();
   var data = new FormData(event.target);
+  console.log(data);
   fetch(event.target.action, {
     method: form.method,
-    body: 'asdasasdas',
+    body: data,
     headers: {
         'Accept': 'application/json'
     }
   })
+  console.log(event.target);
+  console.log(event.target.action);
 }
 form.addEventListener("submit", handleSubmit)
 console.log('hello allo!!');
